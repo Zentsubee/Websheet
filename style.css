@@ -168,3 +168,115 @@ color:white;
 body.dark .card:hover{
 background:linear-gradient(135deg,#0099ff,#00ccff);
 }
+/* ===========================
+   RESPONSIVE TABLET
+   =========================== */
+@media (max-width: 1024px) {
+
+  .topbar {
+    padding: 15px 25px;
+  }
+
+  .container {
+    padding: 30px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .stats {
+    gap: 20px;
+  }
+}
+
+/* ===========================
+   RESPONSIVE MOBILE
+   =========================== */
+@media (max-width: 768px) {
+
+  /* HEADER */
+  .topbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+
+  .actions {
+    width: 100%;
+  }
+
+  .actions input {
+    flex: 1;
+    width: 100%;
+  }
+
+  .actions button {
+    width: 50px;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 40px 15px 20px;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  /* STATS */
+  .stats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stat-box {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* GRID */
+  .container {
+    padding: 20px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+
+  /* CARD */
+  .card {
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  .card img {
+    width: 22px;
+  }
+}
+
+/* ===========================
+   EXTRA SMALL MOBILE
+   =========================== */
+@media (max-width: 480px) {
+
+  .hero h1 {
+    font-size: 22px;
+  }
+
+  .stat-box h2 {
+    font-size: 22px;
+  }
+
+  footer {
+    font-size: 13px;
+  }
+}
